@@ -7,7 +7,7 @@ Time spent: **3** hours spent in total
 ## Pentesting Report
 
 1. Unauthenticated Stored Cross-Site Scripting (XSS)
-  - [ ] Summary: If the comment text is long enough, it will be truncated when inserted in the database. The MySQL TEXT type size limit is 64 kilobytes, so the comment has to be long. 
+  - Summary: If the comment text is long enough, it will be truncated when inserted in the database. The MySQL TEXT type size limit is 64 kilobytes, so the comment has to be long. 
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
