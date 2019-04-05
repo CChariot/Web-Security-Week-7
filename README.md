@@ -20,7 +20,7 @@ Time spent: **3** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.3
-  - Steps to recreate: insert a script command and package it as a mp3 file and upload it to wordpress, refresh the page after upload and the script should be triggered.
+  - Steps to recreate: insert a script command and package it as a mp3 file and upload it to wordpress, refresh the page after upload and the script should be triggered. script: "Summer of Pwnage</noscript><script>alert(document.cookie);</script>".
   - Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7)
   - GIF Walkthrough: <img src="https://github.com/sengfung27/Web-Security-Week-7/blob/master/2.gif" width="800">
