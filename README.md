@@ -20,10 +20,10 @@ Time spent: **3** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.3
-  - GIF Walkthrough: <img src="https://github.com/sengfung27/Web-Security-Week-7/blob/master/2.gif" width="800">
   - Steps to recreate: insert a script command and package it as a mp3 file and upload it to wordpress, refresh the page after upload and the script should be triggered.
   - Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7)
+  - GIF Walkthrough: <img src="https://github.com/sengfung27/Web-Security-Week-7/blob/master/2.gif" width="800">
     
 3. (Required) Two XSS in Media Upload when file too large
   - Summary: An attacker can inject a malicious script in to the filename which a victim tries to upload leading to XSS inside the administrators control panel. Two different "file to large" cases end up in interpolating the file name and appending it into DOM unsanitized leading to XSS.
@@ -32,5 +32,5 @@ Time spent: **3** hours spent in total
     - Fixed in version: 4.2.15
   - Steps to recreate: Create a 20MB file called "Dinosaurs secret life\<img src=x onerror=alert(1)\>\.png", and upload to the media manager, refresh the page after upload and the script should be triggered.
   - Affected source code: 
-    - [Link 1](https://github.com/WordPress/WordPress/commit/8c7ea71edbbffca5d9766b7bea7c7f3722ffafa6)
+    - [Link 2](https://github.com/WordPress/WordPress/commit/8c7ea71edbbffca5d9766b7bea7c7f3722ffafa6)
   - GIF Walkthrough: <img src="https://github.com/sengfung27/Web-Security-Week-7/blob/master/3.gif" width="800">
